@@ -8,7 +8,7 @@ void merge(int arr[] , int si , int ei){
 	int i = si;
 	int j = mid + 1;
 	int k = 0;
-
+//      merge sorted array
 	while(i <= mid && j <= ei){
 		if(arr[i] < arr[j]){
 			output[k] = arr[i];
@@ -33,7 +33,7 @@ void merge(int arr[] , int si , int ei){
 	} 
 
 
-    int m = 0;
+        int m = 0;
 	for(int i = si; i <= ei; i++){
 		arr[i] = output[m];
 		m++;
@@ -45,7 +45,7 @@ void merge(int arr[] , int si , int ei){
 void merge_Sort(int arr[] , int si , int ei){
 	// base case
 	if(si >= ei){
-		return;
+	   return;
 	}
 
 	int mid = (si+ei)/2;
