@@ -33,7 +33,7 @@ void merge(int arr[] , int si , int ei){
 	} 
 
 
-        int m = 0;
+    int m = 0;
 	for(int i = si; i <= ei; i++){
 		arr[i] = output[m];
 		m++;
